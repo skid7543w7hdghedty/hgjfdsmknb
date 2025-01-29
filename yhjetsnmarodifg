@@ -346,6 +346,13 @@ end)
  })
 
  local Button = HorrorTab:CreateButton({
+   Name = "ADS BillBoard",
+   Callback = function()
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0, 25, 2)
+   end,
+})
+
+ local Button = HorrorTab:CreateButton({
     Name = "Tree 1 (Purple and Red Bases)",
     Callback = function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(98, 59, 345)

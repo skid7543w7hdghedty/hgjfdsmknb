@@ -240,6 +240,19 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/The-telligenc
     end,
  })
 
+ local PrisonTab = Window:CreateTab("👮Prison Life", 4483362458) -- Title, Image
+ local PrisonSection = PrisonTab:CreateSection("Scripts")
+
+ local Button = PrisonTab:CreateButton({
+   Name = "Prizz Life V0.8.1",
+   Callback = function()
+       --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
+   end,
+})
+
  local HorrorTab = Window:CreateTab("👹Horror Tycoon", 4483362458) -- Title, Image
  local HorrorSection = HorrorTab:CreateSection("Scripts")
 

@@ -30,9 +30,15 @@ local Window = Rayfield:CreateWindow({
        FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
        SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
        GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-       Key = {"DarkGamesHubPremiumOnTop"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+       Key = {"ProjectDarkGamesHubPremium"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
     }
  })
+
+ local InformationTab = Window:CreateTab("🧾📌Information (SOON)", 4483362458) -- Title, Image
+ local InformationSection = InformationTab:CreateSection("Information")
+
+ local PremiumTab = Window:CreateTab("👑💎Premium Features (SOON)", 4483362458) -- Title, Image
+ local PremiumSection = PremiumTab:CreateSection("Premium")
 
  local HomeTab = Window:CreateTab("🏡Home", 4483362458) -- Title, Image
  local HomeSection = HomeTab:CreateSection("Main")
@@ -243,13 +249,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/The-telligenc
  local PrisonTab = Window:CreateTab("👮Prison Life", 4483362458) -- Title, Image
  local PrisonSection = PrisonTab:CreateSection("Scripts")
 
- local Button = PrisonTab:CreateButton({
+ local Button = HomeTab:CreateButton({
    Name = "Prizz Life V0.8.1",
    Callback = function()
-       --[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
-loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/EnesXVC/Games-Scripts/main/Prison-Life-Prizz-Life"))()
    end,
 })
 
